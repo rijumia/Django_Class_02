@@ -5,3 +5,6 @@ def homePage(request):
 
 def contactPage(request):
     return render(request, 'contact.html')
+
+def signupPage(request):
+    return render(request, 'signup.html')
