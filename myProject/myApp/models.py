@@ -15,3 +15,9 @@ class studentModel(models.Model):
     birth_date = models.DateField()
     address = models.TextField()
     phone_number = models.CharField(max_length=15)
+
+class courseModel(models.Model):
+    course_name = models.CharField(max_length=100)
+    course_code = models.CharField(max_length=10)
+    description = models.TextField()
+    credits = models.IntegerField()

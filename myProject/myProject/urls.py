@@ -9,4 +9,5 @@ urlpatterns = [
     path('contact', contactPage),
     path('signup', signupPage),
     path('viewStudent', viewStudentPage),
+    path('viewCourse', coursePage),
 ]

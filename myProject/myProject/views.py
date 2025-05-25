@@ -19,3 +19,13 @@ def viewStudentPage(request):
     }
 
     return render(request, 'viewStudent.html', context)
+
+
+def coursePage(request):
+    courseData = courseModel.objects.all()
+
+    context = {
+        'courses': courseData,
+    }
+
+    return render(request, 'viewCourse.html', context)

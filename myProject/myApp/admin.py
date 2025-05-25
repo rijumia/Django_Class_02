@@ -5,6 +5,8 @@ admin.site.register(userModel)
 
 admin.site.register(studentModel)
 
+admin.site.register(courseModel)
+
 
     
 
