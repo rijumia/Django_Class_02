@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from myProject.views import homePage, contactPage, signupPage
+from myProject.views import *
 
 
 urlpatterns = [
@@ -8,4 +8,5 @@ urlpatterns = [
     path('home', homePage),
     path('contact', contactPage),
     path('signup', signupPage),
+    path('viewStudent', viewStudentPage),
 ]
