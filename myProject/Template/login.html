@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Login</title>
     <style>
       body {
         margin: 0;
         font-family: "Segoe UI", sans-serif;
-        background: linear-gradient(135deg, #50c878, #2e8b57);
+        background: linear-gradient(135deg, #4a90e2, #145b96);
         height: 100vh;
         display: flex;
         align-items: center;
@@ -52,13 +52,13 @@
       }
 
       .input-group input:focus {
-        border-color: #50c878;
+        border-color: #4a90e2;
       }
 
       .btn {
         width: 100%;
         padding: 12px;
-        background-color: #50c878;
+        background-color: #4a90e2;
         color: #fff;
         font-size: 16px;
         border: none;
@@ -68,7 +68,7 @@
       }
 
       .btn:hover {
-        background-color: #3bb56c;
+        background-color: #3b7dc4;
       }
 
       .footer-text {
@@ -79,7 +79,7 @@
       }
 
       .footer-text a {
-        color: #50c878;
+        color: #4a90e2;
         text-decoration: none;
       }
     </style>
@@ -87,11 +87,7 @@
   <body>
     <div class="container">
       <form class="form-box">
-        <h2>Create Account</h2>
-        <div class="input-group">
-          <label>Full Name</label>
-          <input type="text" required />
-        </div>
+        <h2>Login</h2>
         <div class="input-group">
           <label>Email</label>
           <input type="email" required />
@@ -100,9 +96,9 @@
           <label>Password</label>
           <input type="password" required />
         </div>
-        <button type="submit" class="btn">Register</button>
+        <button type="submit" class="btn">Login</button>
         <p class="footer-text">
-          Already have an account? <a href="{% url 'loginPage' %}">Login</a>
+          Don't have an account? <a href="{% url 'signupPage' %}">Register</a>
         </p>
       </form>
     </div>

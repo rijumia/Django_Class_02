@@ -5,9 +5,10 @@ from myProject.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home', homePage),
-    path('contact', contactPage),
-    path('signup', signupPage),
+    path('home', homePage, name='homePage'),
+    path('contact', contactPage, name='contactPage'),
+    path('login', loginPage, name='loginPage'),
+    path('signup', signupPage, name='signupPage'),
     path('viewStudent', viewStudentPage),
     path('viewCourse', coursePage),
 ]

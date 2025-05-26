@@ -6,6 +6,20 @@ def homePage(request):
 
 def contactPage(request):
     return render(request, 'contact.html')
+def loginPage(request):
+    return render(request, 'login.html')
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+
+        try:
+            user = userModel.objects.get(username=username, password=password)
+            return redirect('viewStudent')
+        except userModel.DoesNotExist:
+            error_message = "Invalid username or password"
+            return render(request, 'login.html', {'error': error_message})
+
+    return render(request, 'login.html')
 
 def signupPage(request):
     return render(request, 'signup.html')
