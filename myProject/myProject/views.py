@@ -12,6 +12,9 @@ def loginPage(request):
 def workPage(request):
     return render(request, 'work.html')
 
+def aboutPage(request):
+    return render(request, 'about.html')
+
 def signupPage(request):
     return render(request, 'signup.html')
 
