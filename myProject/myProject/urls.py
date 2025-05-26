@@ -7,6 +7,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home', homePage, name='homePage'),
     path('contact', contactPage, name='contactPage'),
+    path('work', workPage, name='workPage'),
     path('login', loginPage, name='loginPage'),
     path('signup', signupPage, name='signupPage'),
     path('viewStudent', viewStudentPage),
